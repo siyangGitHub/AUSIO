@@ -1,0 +1,46 @@
+
+.form {
+    padding: 5%;
+}
+
+table thead tr th {
+    font-size: 1rem;
+}
+
+table tbody tr td {
+    font-size: 1rem;
+}
+
+td .stock_record_price {
+    display: inline;
+    width: 50px;
+    text-align: center;
+    height: 1.8rem;
+}
+
+td input[type='number']::-webkit-outer-spin-button,td input[type='number']::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.flavors{
+    white-space: nowrap;
+}
+
+.flavors *{
+    display: inline;
+    width: auto;
+    vertical-align: middle !important;
+}
+
+.flavors .flavor-checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+.flavors .flavors-quantity{
+    display: inline;
+    width: 42px;
+    height: 1.5rem;
+    text-align: center;
+}

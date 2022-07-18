@@ -1,0 +1,746 @@
+.orders {
+    background: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+    padding: 50px 100px;
+}
+
+#block {
+    position: fixed;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: black;
+}
+
+#site-down{
+    color: white;
+    position: relative;
+    top: 45%;
+    margin: 0;
+    pointer-events: none;
+}
+
+#pwd{
+    position: fixed;
+    top: 55%;
+    left: 25%;
+    margin: 0;
+    width: 50%;
+    height: 15px;
+    background: white;
+    border: 1px white solid;
+    text-align: center;
+    cursor: default;
+    color: black;
+    caret-color: transparent;
+}
+
+.warning {
+    text-align: center;
+    padding: 20px;
+    border: 10px solid black;
+}
+
+#sale-sticky-1 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 750;
+    padding: 10px;
+    border: 5px solid #2a6973;
+    z-index: 500;
+    background: darkred;
+    color: white;
+}
+
+#sale-sticky-2 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 750;
+    padding: 10px;
+    border: 5px solid #2a6973;
+    z-index: 500;
+    background: darkgoldenrod;
+    color: white;
+}
+
+.warning h3 {
+    font-weight: 900;
+}
+
+.vape-list {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+}
+
+.vape-product {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 30px;
+    line-height: 1.3;
+}
+
+.vape-product .image {
+    border-radius: 30px 30px 0 0;
+}
+
+.image {
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.zoom-in-out {
+    -webkit-animation: zoom-in-out 3s infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+    50% {
+        transform: scale(1.0, 1.0);
+    }
+    100% {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+.product {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0 10px;
+}
+
+.price {
+    font-size: 30px;
+    color: #C3232D;
+    font-weight: bold;
+}
+
+.priceFor3 {
+    font-size: 17px;
+}
+
+.price3Number {
+    font-weight: bold;
+}
+
+.quantity-button {
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.quantity {
+    background-color: white !important;
+}
+
+.quantity-button .quantity {
+    text-align: center;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.plus, .minus {
+    height: 40px;
+    width: 40px;
+    background: deepskyblue;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.plus {
+    animation: shake 4s linear infinite;
+}
+
+@keyframes shake {
+    50% {
+        transform: translate(1px, 1px) scale(1.3) rotate(0deg);
+    }
+    51% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    52% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    53% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    54% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    55% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    56% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    57% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    58% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    59% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    60% {
+        transform: translate(1px, -2px) scale(1) rotate(-1deg);
+    }
+}
+
+.plus:hover, .minus:hover {
+    background: lightskyblue;
+}
+
+.bottom-sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    background: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 200;
+}
+
+.bottom-sticky span {
+    vertical-align: middle;
+}
+
+.submit {
+    background: gray;
+    padding: 10px;
+    vertical-align: top;
+    color: white;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background: lightgray;
+    color: black;
+}
+
+.bottom-sticky .columns {
+    white-space: nowrap;
+}
+
+#viewCart {
+    vertical-align: middle;
+    font-size: 25px;
+    color: lightgray;
+    padding: 11px;
+    background: #4d4d4d;
+    margin-right: 10px;
+}
+
+#viewCart:hover {
+    background: #2d2d2d;
+    color: white;
+}
+
+
+#cart {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    bottom: 49px;
+    background: #4d4d4d;
+    padding: 3vh 5vw;
+    align-items: center;
+    opacity: 0.9;
+    overflow-y: auto;
+    z-index: 200;
+    display: block;
+}
+
+#cart * {
+    color: white;
+    opacity: 1;
+}
+
+#cart h3 {
+    border-bottom: 2px solid white;
+    padding-left: 5%;
+    padding-bottom: 3px;
+}
+
+#cart-table {
+    background: inherit;
+}
+
+#cart-table tr {
+    border-bottom: 1px solid white;
+}
+
+.table-price {
+    width: 30%;
+}
+
+.table-name {
+    width: 50%;
+}
+
+.table-quantity {
+    width: 20%;
+}
+
+#close-cart {
+    position: absolute;
+    right: 2vh;
+    top: 2vh;
+}
+
+#close-cart2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42%;
+    background: transparent;
+}
+
+#close-cart i {
+    font-size: 35px;
+    color: white;
+}
+
+.container {
+    min-height: unset;
+    text-align: center;
+}
+
+.brand-filter {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5vh 5vw;
+}
+
+.centered a {
+    padding: 0;
+}
+
+.ui-icon {
+    -webkit-box-sizing: unset;
+}
+
+.logo img {
+    height: 100px;
+    /*width: 50%;*/
+    margin: 0;
+    border: 1px solid lightgray;
+    background: white;
+}
+
+#product-selector {
+    width: auto;
+    margin: 20px 0;
+    padding: 0 25px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+div .select2-container {
+    margin: 20px 0;
+}
+
+select2, .select2-container, .select2-container--default {
+    width: 80% !important;
+}
+
+.select2-selection__placeholder {
+    font-size: 17px;
+}
+
+.select2-results__options li {
+    text-align: center;
+}
+
+
+.select2-selection__clear span {
+    font-size: 24px;
+}
+
+.out-of-stock {
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: auto;
+    top: 10px;
+    z-index: 100;
+    margin: 0 20%;
+}
+
+.low-stock {
+    background: orange;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: auto;
+    top: 10px;
+    z-index: 100;
+    margin: 0 20%;
+}
+
+.new-flavor {
+    background: limegreen;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: auto;
+    top: 10px;
+    z-index: 100;
+    margin: 0 20%;
+}
+
+button[disabled], button[disabled]:hover {
+    background: lightgray;
+}
+
+
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100%;
+}
+
+.hero-section {
+    align-items: flex-start;
+    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: var(--spacing-xl);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+}
+
+
+.card {
+    list-style: none;
+    position: relative;
+}
+
+.brand .card-grid .card:before, .variant .card-grid .card:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card__background {
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.5) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-selected .card__background {
+    filter: brightness(1) saturate(1) contrast(1);
+    border: 5px solid white;
+}
+
+.card__content {
+    left: 0;
+    padding: var(--spacing-m);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__category {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+}
+
+.brand .card .card__content .card__heading {
+    letter-spacing: 2px;
+}
+
+.card__heading {
+    color: var(--text-lighter);
+    font-size: 3rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+}
+
+.sale {
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: auto;
+    bottom: 25px;
+    z-index: 100;
+    margin: 0 20%;
+}
+
+#scroll {
+    position: fixed;
+    z-index: 300;
+    right: 5vw;
+    bottom: 15vh;
+    font-weight: bold;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#scroll:hover {
+    color: lightgray;
+    mix-blend-mode: unset;
+}
+
+#remain {
+    position: fixed;
+    z-index: 200;
+    left: 30px;
+    bottom: 49px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 0 5px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    animation: down 1s infinite;
+    pointer-events: none;
+}
+
+#remain #flavors-count {
+    color: lightgreen;
+}
+
+#remain i {
+    padding: 0 25px;
+    color: red;
+    font-weight: 1000;
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0, -2px);
+    }
+    50% {
+        transform: translate(0, 2px);
+    }
+    100% {
+        transform: translate(0, -2px);
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .orders {
+        padding: 20px 0;
+    }
+
+    .price, .priceFor3 {
+        display: block;
+    }
+
+    .image {
+        padding: 10px;
+    }
+
+    .vape-list {
+        padding: 0 20px;
+    }
+
+    .product {
+        font-size: 3vw;
+    }
+
+    .priceFor3 {
+        font-size: 20px;
+    }
+
+    .brand .card-grid .card .card__content .card__heading {
+        font-size: 5vw;
+    }
+
+    .variant .card-grid .card .card__content .card__heading {
+        font-size: 3vw;
+    }
+
+    .plus, .minus {
+        height: 45px;
+        width: 45px;
+    }
+
+    .quantity-button .quantity {
+        height: 45px;
+        vertical-align: top;
+        color: black;
+        font-weight: bold;
+        -webkit-text-fill-color: black;
+        opacity: 1;
+    }
+
+    #scroll {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .orders {
+        padding: 20px 0;
+    }
+
+    .price, .priceFor3 {
+        display: block;
+    }
+
+    .image {
+        padding: 10px;
+    }
+
+    .vape-list {
+        padding: 0 20px;
+    }
+
+    .priceFor3 {
+        font-size: 15px;
+    }
+
+    .vape-list {
+        padding: 0 20px;
+    }
+
+    .product {
+        font-size: 25px;
+    }
+
+    #remain {
+        bottom: -50px;
+    }
+
+    .brand .card-grid .card .card__content .card__heading {
+        font-size: 7vw;
+    }
+
+    .variant .card-grid .card .card__content .card__heading {
+        font-size: 5vw;
+    }
+}
+
+
+
+
